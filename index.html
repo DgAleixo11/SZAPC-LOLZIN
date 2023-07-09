@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto Dev Em Dobro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./src/imagens/Logo.png" alt="Logo" class="logo">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione seu campeão</h1>
+
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="ahri" data-name="Ahri" data-description="A ligação de Ahri com a magia do mundo
+                espiritual é inata. Ela é uma vastaya com traços de raposa, capaz de manipular as emoções de sua
+                presa e consumir sua essência, devorando também as memórias e as percepções de cada alma absorvida.
+                Outrora uma predadora poderosa, porém rebelde, Ahri agora viaja pelo mundo em busca de vestígios dos
+                seus antepassados enquanto tenta substituir as memórias roubadas por novas de sua própria autoria.">
+                    <img src="./src/imagens/Ahri art.jpg" alt="personagem Ahri">
+                </li>
+
+                <li class="personagem" id="ashe" data-name="Ashe"
+                    data-description="A mãe de guerra Glacinata da tribo de Avarosa, Ashe comanda a horda mais populosa do norte. Estoica, inteligente e idealista, mesmo que desconfortável com seu papel de liderança, ela canaliza as magias ancestrais de sua linhagem para empunhar um arco de Gelo Verdadeiro. Com a crença de seu povo de que Ashe seria a heroína mítica, Avarosa, reencarnada, ela espera unificar Freljord mais uma vez, retomando suas antigas terras tribais.">
+                    <img src="./src/imagens/Ashe art.jpg" alt="personagem Ashe">
+                </li>
+
+                <li class="personagem" id="braum" data-name="Braum"
+                    data-description="Abençoado com bíceps gigantescos e um coração maior ainda, Braum é um amado herói de Freljord. Cada salão de hidromel ao norte de Frostheld brinda sua força lendária que teria derrubado uma floresta de carvalhos em uma única noite e demolido uma montanha inteira com um soco. Carregando uma porta de cofre encantada como seu escudo, Braum vaga pelo norte congelado com seu sorriso abigodado tão grande quanto seus músculos, um verdadeiro amigo para os necessitados.">
+                    <img src="./src/imagens/Braum art.jpg" alt="personagem Braum">
+                </li>
+
+                <li class="personagem" id="caitlyn" data-name="Caitlyn"
+                    data-description="Conhecida como sua melhor pacificadora, Caitlyn também é a melhor escolha de Piltover para livrar a cidade de seus elementos criminosos elusivos. É comum que ela faça dupla com Vi, agindo como um contraponto de calmaria para a natureza impetuosa de sua parceira. Mesmo carregando um rifle hextec único, a arma mais poderosa de Caitlyn é seu intelecto superior, que permite que ela prepare elaboradas armadilhas para qualquer fora da lei tolo o suficiente para operar na Cidade do Progresso.">
+                    <img src="./src/imagens/Caitlyn art.jpg" alt="Personagem Caitlyn">
+                </li>
+
+                <li class="personagem" id="jinx" data-name="Jinx"
+                    data-description="Uma criminosa impulsiva e maníaca de Zaun, Jinx vive para disseminar o caos sem se preocupar com as consequências. Com um arsenal de armas mortais, ela detona as explosões mais altas e mais luminosas para deixar um rastro de destruição e pânico por onde passa. Jinx abomina o tédio e deixa alegremente sua marca caótica de pandemônio aonde quer que vá.">
+                    <img src="./src/imagens/Jinx art.jpg" alt="personagem Jinx">
+                </li>
+
+                <li class="personagem" id="katarina" data-name="Katarina"
+                    data-description="Decisiva em seus julgamentos e letal em combate, Katarina é a assassina de maior calibre de Noxus. Filha mais velha do lendário General Du Couteau, Katarina é reconhecida por seus assassinatos eficientes contra inimigos desavisados. Sua ambição ardente a levou a buscar alvos extremamente protegidos, mesmo correndo o risco de colocar seus aliados em perigo; mas não importa a missão, Katarina não hesita ao executar seu dever no meio de um furacão de adagas serrilhadas.">
+                    <img src="./src/imagens/Katarina art.jpg" alt="personagem Katarina">
+                </li>
+
+                <li class="personagem" id="yasuo" data-name="Yasuo"
+                    data-description="Yasuo, um ioniano extremamente determinado, é também um ágil espadachim que usa o próprio ar como arma para enfrentar seus inimigos. Quando jovem, ele teve seu orgulho ferido ao ser acusado injustamente do assassinato de seu mestre — sem conseguir provar sua inocência, ele foi forçado a matar o próprio irmão para se defender. Até hoje, mesmo depois do verdadeiro assassino do seu mestre ter sido revelado, Yasuo ainda não consegue se perdoar e vaga por sua terra natal com apenas o vento para guiar sua espada.">
+                    <img src="./src/imagens/Yasuo art.jpg" alt="Personagem Yasuo">
+                </li>
+
+                <li class="personagem" id="zed" data-name="Zed"
+                    data-description="Absolutamente impiedoso e implacável, Zed é o líder da Ordem das Sombras; uma organização criada com a intenção de militarizar as tradições marciais e mágicas de Ionia para expulsar os invasores noxianos. Durante a guerra, o desespero o levou a libertar a forma secreta das sombras, uma magia espiritual malévola tão perigosa e manipuladora quanto poderosa. Zed dominou todas essas técnicas proibidas para destruir qualquer coisa que considerasse uma ameaça a sua nação, ou a sua nova ordem.">
+                    <img src="./src/imagens/Zed art.jpg" alt="Personagem Magneto">
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="personagem-selecionado">
+            <img src="./src/imagens/Ahri-personagem.png" alt="personagem-selecionado" class="personagem-grande">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Ahri</h2>
+                <p class="descricao-personagem" id="descricao-personagem">A ligação de Ahri com a magia do mundo
+                    espiritual é inata. Ela é uma vastaya com traços de raposa, capaz de manipular as emoções de sua
+                    presa e consumir sua essência, devorando também as memórias e as percepções de cada alma absorvida.
+                    Outrora uma predadora poderosa, porém rebelde, Ahri agora viaja pelo mundo em busca de vestígios dos
+                    seus antepassados enquanto tenta substituir as memórias roubadas por novas de sua própria autoria.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
